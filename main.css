@@ -10,7 +10,7 @@ strong {
     color: #333;
 }
 .main {
-    background-color: #F4FFF8;
+    background-color: #F4F4F4;
     margin: 0 auto;
     font-family: "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
@@ -18,31 +18,57 @@ strong {
 }
 
 header {
-    background-color: #053225;
-    line-height: 1.2;
-    padding: 10vw ;
-    height: 100%;
+    background-color: lightblue;
+    line-height: 1;
+    padding: 2em ;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
-header h1 {
-    color: #F7FCFF;
-    font-size: 50px;
+.name h1 {
+    color: #A53F2B;
+    font-size: 5em;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
     padding-top: 0;
+    width: 100%;
 }
 
-header h2 {
-    color: #AAA;
+.name h2 {
+    padding-top: 1em;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
 }
+
+.name h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.name h2 a:visited {
+    text-decoration: none;
+}
+
+
 
 .contact {
     text-align: center;
-    margin-top: 2vw;
-    color: #F7FCFF
+    margin: 2vw auto;
+    color: #F7FCFF;
+    max-width: 50em;
+    margin-left: auto;
 }
 
 .contact a {
     color: #F7FCFF;
-    padding-right: 3em;
+    margin: 0 1em;
+    text-decoration: none;
 }
 
 .contact a:visited {
@@ -50,23 +76,40 @@ header h2 {
     text-decoration: none;
 }
 
-.name {
-    max-width: 50em;
-    margin: 0 auto;
-}
-
+/*-------------------------------------------------
+    THIS IS CONTENT CSS*/
 .container {
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 60em;
     padding: 0;
     color: #555;
     z-index: -99;
     padding: 1em;
-    background-color: beige;
 }
 
+.container h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.container h2 {
+    padding: 5px 0 ;
+}
+
+.container h3 {
+    text-align: center;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.container p {
+    padding-top: 5px;
+    text-indent: 15px;
+}
+
+
+
 .semester {
-    background-color: white;
     padding: .5em;
     margin-bottom: 1em;
     color: #384949;
