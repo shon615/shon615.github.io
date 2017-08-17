@@ -20,11 +20,12 @@ strong {
 header {
     background-color: #D8AB60;
     line-height: 1;
-    padding: 2em ;
+    padding: 2em;
     height: auto;
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    box-shadow: 0 0 5px 1px #999;
 }
 
 header h2 a {
@@ -52,7 +53,13 @@ header .active {
 .name h1 a {
     text-decoration: none;
     color: #331C22;
+    transition: color 0.5s;
 }
+
+.name h1 a:hover {
+    color: #75001F;
+}
+
 .name h1 a:visited {
     text-decoration: none;
 }
@@ -74,11 +81,9 @@ header .active {
     text-decoration: none;
 }
 
-
-
 .contact {
     text-align: center;
-    margin: 2vw auto;
+    margin: 2.3vw auto 0 auto;
     color: #F7FCFF;
     max-width: 50em;
     margin-left: auto;
@@ -123,7 +128,17 @@ header .active {
 
 .container p {
     padding-top: 5px;
-    text-indent: 15px;
+    text-indent: 0px;
+}
+
+.container h3 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 1s;
+}
+
+.container h3 a:hover {
+    color: black;
 }
 
 .img-circle {
@@ -179,8 +194,9 @@ header .active {
 /*********************************/
 
 .semester {
-    padding: 0em;
-    margin-bottom: 1em;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px gray solid;
     color: #384949;
 }
 
