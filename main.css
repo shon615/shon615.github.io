@@ -9,6 +9,15 @@ h2,
 strong {
     color: #333;
 }
+
+h1, h2, h3, h4 {
+    font-family: 'Titillium Web', monospace;   
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 .main {
     background-color: #F4F4F4;
     margin: 0 auto;
@@ -17,8 +26,10 @@ strong {
     width: 100%;
 }
 
+/******************************/
+
 header {
-    background-color: #D8AB60;
+    background-color: #E49273;
     line-height: 1;
     padding: 2em;
     height: auto;
@@ -28,23 +39,14 @@ header {
     box-shadow: 0 0 5px 1px #999;
 }
 
-header h2 a {
-    padding: 5px 10px;
-    transition: background-color 0.5s;
-    border-radius: 5px;
-}
-header h2 a:hover {
-    background-color: #E8E8E8;
-}
 
-header .active {
-    background-color: #F4F4F4;
-}
+/******************************/
+
 .name h1 {
     font-size: 5em;
     text-transform: uppercase;
-    font-family: monospace;
-    font-weight: bold;
+    font-family: 'Titillium Web', monospace;
+    font-weight: lighter;
     text-align: center;
     padding-top: 0;
     width: 100%;
@@ -65,9 +67,10 @@ header .active {
 }
 
 .name h2 {
-    padding-top: 1em;
+    padding-top: 0.5em;
     color: #000;
     text-decoration: none;
+    font-family: 'Titillium Web', monospace;
     font-size: 1em;
 }
 
@@ -81,9 +84,26 @@ header .active {
     text-decoration: none;
 }
 
+/******************************/
+
+header h2 a {
+    padding: 0px 10px;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+}
+header h2 a:hover {
+    background-color: #E8E8E8;
+}
+
+header .active {
+    background-color: #F4F4F4;
+}
+
+/******************************/
+
 .contact {
     text-align: center;
-    margin: 2.3vw auto 0 auto;
+    margin: 1em auto 0 auto;
     color: #F7FCFF;
     max-width: 50em;
     margin-left: auto;
@@ -133,12 +153,15 @@ header .active {
 
 .container h3 a {
     text-decoration: none;
-    color: inherit;
-    transition: color 1s;
+    color: black;
+    transition: background-color .25s;
+    background-color: #D8AB60;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .container h3 a:hover {
-    color: black;
+    background-color: #D98E2B;
 }
 
 .img-circle {
@@ -154,8 +177,10 @@ header .active {
 }
 
 .img-small {
-    height: 100px;
-    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    height: 60%;
+    width: 60%;
 }
 /******************************/
 .rightleft {
@@ -192,6 +217,75 @@ header .active {
 
 
 /*********************************/
+.col-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 0em;
+    position: relative;
+}
+.col-left {
+    position: absolute;
+    width: 66%;
+    height: auto;
+    left: 0;
+    display: inline-block;
+}
+.col-1 {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    display: inline-block;
+    height: auto;
+    border-right: 0.75px lightgray solid;
+}
+.col-2 {
+    margin-left: 50%;
+    height: auto;
+    border-right: 0.75px lightgray solid;
+
+}
+.col-3 {
+    margin-left: 66%;
+    height: auto;
+}
+
+.col-container p {
+    padding: 10px;
+}
+/*********************************/
+
+.border {
+    width: 85%;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px lightblue solid;
+    margin: 5px auto;
+}
+.progress-80 {
+    height: 100%;
+    width: 80%;
+    background-color: skyblue;
+    border-radius: 10px 0 0 10px;
+}
+
+.progress-70 {
+    height: 100%;
+    width: 70%;
+    background-color: skyblue;
+    border-radius: 10px 0 0 10px;
+}
+
+.progress-40 {
+    height: 100%;
+    width: 40%;
+    background-color: skyblue;
+    border-radius: 10px 0 0 10px;
+}
+
+/*********************************/
 
 .semester {
     padding-bottom: 1.5em;
@@ -204,4 +298,26 @@ header .active {
     margin-left: 0em;
 }
 
+.divider {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #E49273;
+    height: 1.5px;
+}
+
+/*********************************/
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header {
+        height: auto;
+    }
+    .rightleft {
+        display: block;
+    }
+    .left-short {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 
