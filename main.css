@@ -168,7 +168,7 @@ header .active {
     border-radius: 50%;
     margin: 0 auto;
     display: block;
-    
+    border: 5px solid #E49273;
 }
 
 .img-medium {
@@ -177,41 +177,42 @@ header .active {
 }
 
 .img-small {
-    max-height: 100px;
-    max-width: 100px;
-    height: 60%;
-    width: 60%;
+    
+    width: 100%;
+    margin: auto;
+    border: 3px solid #E49273;
+    border-radius: 50%;
+}
+
+.img-skills {
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    
 }
 /******************************/
 .rightleft {
+    clear: both;
     width: 100%;
-    position: relative;
     margin: 15px 0px;
+    overflow:auto;
 }
 
-.rightleft p {
-    text-indent: 0px;
-}
-
-.left-short .img {
-    vertical-align: middle;
-    display: inline-block;
-    max-height: 100%;
-    max-width: 100%;
-    
-}
 
 .left-short {
-    width: 100px;
-    position: absolute;
-    left: 0px;
+    width: 15%;
+    max-width: 100px;
+    float: left;
     vertical-align: middle;
-    display: inline-block;
-    height: 100%;
+    
+    padding: 5px 0;
 }
+
 .right-long {
-    margin-left: 130px;
-    padding-left: 20px;
+    float: right;
+    width: 83%;
+    padding-left: 1%;
+    margin-left: 1%;
     border-left: 0.75px lightgray solid;
 }
 
@@ -219,42 +220,25 @@ header .active {
 /*********************************/
 .col-container {
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
     height: auto;
     padding: 5px;
-    margin-bottom: 0em;
-    position: relative;
+    clear: both;
 }
-.col-left {
-    position: absolute;
-    width: 66%;
-    height: auto;
-    left: 0;
-    display: inline-block;
-}
-.col-1 {
-    position: absolute;
-    width: 50%;
-    left: 0;
+.col-1, .col-2, .col-3 {
+    float: left;
+    width: 33.33%;
     display: inline-block;
     height: auto;
-    border-right: 0.75px lightgray solid;
+    text-align: center;
+    padding: 10px
 }
+
 .col-2 {
-    margin-left: 50%;
-    height: auto;
     border-right: 0.75px lightgray solid;
-
-}
-.col-3 {
-    margin-left: 66%;
-    height: auto;
+    border-left: 0.75px lightgray solid;
 }
 
-.col-container p {
-    padding: 10px;
-}
+
 /*********************************/
 
 .border {
@@ -287,13 +271,6 @@ header .active {
 
 /*********************************/
 
-.semester {
-    padding-bottom: 1.5em;
-    margin-bottom: 1.5em;
-    border-bottom: 1px gray solid;
-    color: #384949;
-}
-
 .activity {
     margin-left: 0em;
 }
@@ -302,7 +279,16 @@ header .active {
     width: 80%;
     margin: 0 auto;
     background-color: #E49273;
-    height: 1.5px;
+    height: 1px;
+}
+
+/*********************************/
+
+
+blockquote {
+    margin-left: 25px;
+    text-indent: 15px;
+    font-style: italic;
 }
 
 /*********************************/
@@ -310,14 +296,49 @@ header .active {
     /* For mobile phones: */
     header {
         height: auto;
+        /*font-size: 3em;*/
+    }
+    .name h1 {
+        font-size: 15vw;
+    }
+    .name h2 {
+        line-height: 1.5
     }
     .rightleft {
+        width: 100%;
+        float: none;
         display: block;
     }
     .left-short {
-        display: block;
         width: 100%;
+        float: none;
+        display: block;
         margin: 0 auto;
+        text-align: center;
+    }
+    
+    .right-long {
+        width: 100%;
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+        border-left: none;
+    }
+    
+    .col-1, .col-2, .col-3 {
+        float: none;
+        width: 100%;
+        display: block;
+        padding-top: 15px;
+        margin: 15px auto;
+    }
+    .col-2 {
+        border-right: none;
+        border-left: none;
+        border-top: 0.75px lightgray solid;
+        border-bottom: 0.75px lightgray solid;;
     }
 }
+
 
