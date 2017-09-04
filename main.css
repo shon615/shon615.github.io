@@ -143,7 +143,7 @@ header .active {
 .container h3 {
     text-align: center;
     line-height: 1.1em;
-    margin-bottom: 0.5em;
+    margin: 0.5em;
 }
 
 .container p {
@@ -151,17 +151,23 @@ header .active {
     text-indent: 0px;
 }
 
-.container h3 a {
+
+.next {
     text-decoration: none;
     color: black;
     transition: background-color .25s;
     background-color: #D8AB60;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 2em;
 }
 
-.container h3 a:hover {
+.next:hover {
     background-color: #D98E2B;
+}
+.next a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .img-circle {
@@ -271,13 +277,16 @@ header .active {
 
 /*********************************/
 
+.indent {
+    margin-left: 25px;
+}
 .activity {
     margin-left: 0em;
 }
 
 .divider {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #E49273;
     height: 1px;
 }
@@ -289,10 +298,65 @@ blockquote {
     margin-left: 25px;
     text-indent: 15px;
     font-style: italic;
+    font-size: 12px;
 }
 
 /*********************************/
-@media screen and (max-width: 768px) {
+.toggle-box {
+    display: none;
+}
+
+.toggle-box + label {
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.toggle-box + label + div {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.toggle-box:checked + label + div {
+    display: block;
+}
+
+.toggle-box + label:after {
+  background-color: #4F5150;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  content: "+";
+  display: inline;
+  float: right;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+  width: 20px;
+}
+
+/*.toggle-box:checked + label:before {
+  content: "\2212";
+}*/
+
+/*********************************/
+
+.project-title {
+    text-align: center;
+    padding: 10px;
+}
+/*********************************/
+
+
+
+@media screen and (max-width: 540px) {
     /* For mobile phones: */
     header {
         height: auto;
