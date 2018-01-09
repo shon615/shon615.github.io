@@ -24,6 +24,7 @@ p {
     font-family: "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     width: 100%;
+    min-height: 100%;
 }
 
 /******************************/
@@ -160,6 +161,7 @@ header .active {
     padding: 10px;
     border-radius: 5px;
     margin-top: 2em;
+    
 }
 
 .next:hover {
