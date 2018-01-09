@@ -225,21 +225,21 @@ header .active {
 
 /*********************************/
 .col-container {
-    width: 100%;
-    height: auto;
     padding: 5px;
-    clear: both;
+    display: block;
+    overflow: auto;
 }
-.col-1, .col-2, .col-3 {
+.col-1, .col-2, .col-3, .col-4 {
     float: left;
-    width: 33.33%;
+    width: 25%;
+    height: 100%;
     display: inline-block;
     height: auto;
     text-align: center;
     padding: 10px
 }
 
-.col-2 {
+.col-2, .col-3 {
     border-right: 0.75px lightgray solid;
     border-left: 0.75px lightgray solid;
 }
@@ -274,6 +274,15 @@ header .active {
     background-color: skyblue;
     border-radius: 10px 0 0 10px;
 }
+
+.progress-20 {
+    height: 100%;
+    width: 20%;
+    background-color: skyblue;
+    border-radius: 10px 0 0 10px;
+}
+
+
 
 /*********************************/
 
