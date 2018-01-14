@@ -409,10 +409,10 @@ blockquote {
         padding-top: 15px;
         margin: 15px auto;
     }
-    .col-2 {
+    .col-1, .col-2, .col-3 {
         border-right: none;
         border-left: none;
-        border-top: 0.75px lightgray solid;
+        //border-top: 0.75px lightgray solid;
         border-bottom: 0.75px lightgray solid;;
     }
 }
